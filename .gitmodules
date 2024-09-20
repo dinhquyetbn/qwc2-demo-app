@@ -1,3 +1,4 @@
 [submodule "qwc2"]
 	path = qwc2
-	url = https://github.com/qgis/qwc2.git
+	url = https://github.com/dinhquyetbn/qwc2.git
+	branch = develop_dev_2024_lts

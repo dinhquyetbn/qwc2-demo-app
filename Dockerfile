@@ -2,12 +2,12 @@
 
 ARG QWC_MAP_VIEWER_VERSION=latest
 
-FROM circleci/node:18 AS builder
+FROM circleci/node:latest AS builder
 
 WORKDIR /home/circleci
 COPY --chown=circleci . .
 
-RUN yarn install && yarn run prod
+RUN npm install && npm run prod
 
 
 FROM sourcepole/qwc-map-viewer-base:$QWC_MAP_VIEWER_VERSION
