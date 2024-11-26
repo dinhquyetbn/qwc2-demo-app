@@ -13,3 +13,4 @@ RUN npm install && npm run prod
 FROM sourcepole/qwc-map-viewer-base:$QWC_MAP_VIEWER_VERSION
 
 COPY --from=builder --chown=$SERVICE_UID /home/circleci/prod /qwc2
+ENV SERVICE_MOUNTPOINT=/map_viewer
