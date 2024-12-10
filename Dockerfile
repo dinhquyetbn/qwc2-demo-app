@@ -2,7 +2,8 @@
 
 ARG QWC_MAP_VIEWER_VERSION=latest
 
-FROM circleci/node:latest AS builder
+# FROM circleci/node:18 AS builder
+FROM node:18 AS builder
 
 WORKDIR /home/circleci
 COPY --chown=circleci . .
